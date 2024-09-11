@@ -1,0 +1,103 @@
+What is a neural network?|A computational model inspired by the human brain, consisting of interconnected nodes (neurons) that process and transmit information
+What is the purpose of an activation function in a neural network?|To introduce non-linearity into the network, allowing it to learn complex patterns and relationships in the data
+Name three common activation functions used in neural networks.|ReLU (Rectified Linear Unit), Sigmoid, and Tanh (Hyperbolic Tangent)
+What is backpropagation in neural networks?|An algorithm used to calculate gradients and update weights during training, propagating the error backward through the network
+What is the difference between supervised and unsupervised learning in neural networks?|Supervised learning uses labeled data for training, while unsupervised learning works with unlabeled data to find patterns or structures
+What is a perceptron?|The simplest form of a neural network, consisting of a single neuron that takes weighted inputs and produces a binary output
+What is the vanishing gradient problem in deep neural networks?|The issue where gradients become extremely small as they propagate backward through many layers, making it difficult to train deep networks
+How does the ReLU activation function help address the vanishing gradient problem?|ReLU allows gradients to flow more easily through the network by not squashing them in the positive domain, unlike sigmoid or tanh functions
+What is a deep neural network?|A neural network with multiple hidden layers between the input and output layers
+What is the purpose of a loss function in neural network training?|To measure the difference between the network's predictions and the actual target values, guiding the optimization process
+Name two common loss functions used in neural networks.|Mean Squared Error (MSE) and Cross-Entropy Loss
+What is the role of an optimizer in training neural networks?|To adjust the network's weights and biases based on the computed gradients, minimizing the loss function
+Name three popular optimization algorithms used in neural networks.|Stochastic Gradient Descent (SGD), Adam, and RMSprop
+What is a convolutional neural network (CNN)?|A type of neural network designed for processing grid-like data, such as images, using convolutional layers
+What is the purpose of pooling layers in CNNs?|To reduce the spatial dimensions of the feature maps, decreasing computational complexity and providing some translation invariance
+What is a recurrent neural network (RNN)?|A type of neural network designed to process sequential data by maintaining an internal state or memory
+What is the vanishing gradient problem in RNNs, and how does LSTM address it?|The issue where gradients diminish over long sequences; LSTMs use gating mechanisms to control information flow and mitigate this problem
+What is transfer learning in the context of neural networks?|The technique of using a pre-trained model on a new but related task, often improving performance and reducing training time
+What is the difference between batch normalization and layer normalization?|Batch normalization normalizes across the batch dimension, while layer normalization normalizes across the feature dimension
+What is dropout, and how does it help prevent overfitting?|A regularization technique that randomly sets a fraction of neuron outputs to zero during training, reducing co-adaptation of neurons
+What is the purpose of the softmax function in neural networks?|To convert a vector of raw scores into a probability distribution, often used in the output layer for multi-class classification
+What is a Generative Adversarial Network (GAN)?|A type of neural network architecture consisting of a generator and a discriminator, used for generating new data samples
+What is the role of the discriminator in a GAN?|To distinguish between real and generated samples, providing feedback to improve the generator's performance
+What is the difference between a dense layer and a convolutional layer?|Dense layers connect every neuron to every neuron in the previous layer, while convolutional layers use local connections and shared weights
+What is a residual connection (skip connection) in neural networks?|A connection that skips one or more layers, allowing the network to learn residual functions and mitigate the vanishing gradient problem
+What is the purpose of data augmentation in training neural networks?|To artificially increase the size and diversity of the training dataset, improving the model's generalization and robustness
+What is the difference between L1 and L2 regularization in neural networks?|L1 regularization adds the absolute values of weights to the loss function, promoting sparsity, while L2 adds squared weights, preventing large weight values
+What is the purpose of batch size in neural network training?|To determine the number of samples processed before the model updates its parameters, affecting training speed and stability
+What is the difference between a feedforward neural network and a recurrent neural network?|Feedforward networks process input in one direction, while recurrent networks have feedback connections allowing information to persist
+What is the purpose of the embedding layer in neural networks?|To convert categorical variables or tokens into dense vector representations, capturing semantic relationships
+What is the role of attention mechanisms in neural networks?|To allow the model to focus on different parts of the input when producing outputs, improving performance on tasks like machine translation
+What is the difference between self-attention and cross-attention?|Self-attention computes attention within a single sequence, while cross-attention computes attention between two different sequences
+What is a transformer architecture?|A neural network architecture that relies primarily on attention mechanisms, widely used in natural language processing tasks
+What is the purpose of positional encoding in transformer models?|To provide information about the relative or absolute position of tokens in the input sequence
+What is the difference between encoder-only, decoder-only, and encoder-decoder transformer architectures?|Encoder-only processes input, decoder-only generates output, and encoder-decoder transforms input to output
+What is the purpose of the learning rate in neural network training?|To control the step size at each iteration while moving toward a minimum of the loss function
+What is learning rate decay, and why is it used?|A technique to gradually reduce the learning rate during training, allowing for faster initial learning and finer adjustments later
+What is the difference between a parameter and a hyperparameter in neural networks?|Parameters are learned during training (e.g., weights), while hyperparameters are set before training (e.g., learning rate)
+What is the purpose of early stopping in neural network training?|To prevent overfitting by stopping training when the model's performance on a validation set starts to degrade
+What is an autoencoder and what is its primary use?|A type of neural network that learns to encode data into a compressed representation and then decode it; used for dimensionality reduction and feature learning
+What is a self-organizing map (SOM)?|An unsupervised learning technique that produces a low-dimensional representation of the input space, often used for visualization of high-dimensional data
+What is a Boltzmann machine?|A type of stochastic recurrent neural network that can learn internal representations and generate samples from the learned distributions
+What is the Adam optimizer, and how does it differ from standard gradient descent?|Adam is an adaptive learning rate optimization algorithm that combines ideas from momentum and RMSprop, adjusting learning rates for each parameter
+What is the purpose of gradient clipping in neural network training?|To prevent exploding gradients by limiting the maximum value of gradients, helping to stabilize training
+What is the difference between instance normalization and group normalization?|Instance normalization applies to single samples and channels, while group normalization divides channels into groups and normalizes within them
+What is neural architecture search (NAS)?|An automated process for designing optimal neural network architectures, often using techniques like reinforcement learning or evolutionary algorithms
+What is meta-learning in the context of neural networks?|The process of learning how to learn, enabling models to adapt quickly to new tasks with minimal training data
+Name three common evaluation metrics for classification tasks.|Accuracy, Precision, and Recall (or F1-score, which combines Precision and Recall)
+What is the ROC curve, and what does AUC-ROC represent?|Receiver Operating Characteristic curve plots true positive rate vs false positive rate; Area Under the Curve (AUC) represents the model's ability to distinguish between classes
+What are some techniques for handling imbalanced datasets in neural network training?|Oversampling minority class, undersampling majority class, SMOTE (Synthetic Minority Over-sampling Technique), and adjusting class weights
+What is model pruning, and why is it used in neural networks?|A technique to reduce the size of neural networks by removing unnecessary connections or neurons, often used for model compression and efficiency
+What is knowledge distillation in neural networks?|A technique where a smaller model (student) is trained to mimic the behavior of a larger, more complex model (teacher) to achieve similar performance with less computational cost
+What is the difference between a vanilla RNN and an LSTM?|Vanilla RNNs have a simple structure but struggle with long-term dependencies, while LSTMs use gating mechanisms to better capture long-range dependencies
+What is the purpose of the forget gate in an LSTM?|To decide what information to discard from the cell state, allowing the network to forget irrelevant information
+What is a Gated Recurrent Unit (GRU) and how does it differ from an LSTM?|GRU is a simplified version of LSTM with fewer gates, combining the forget and input gates into a single update gate
+What is the purpose of 1x1 convolutions in CNNs?|To reduce the number of channels, perform feature pooling, and introduce non-linearity without affecting the spatial dimensions
+What is the receptive field in a CNN?|The region in the input space that a particular CNN feature is looking at or affected by
+What is the difference between valid and same padding in convolutional layers?|Valid padding doesn't add padding, reducing spatial dimensions, while same padding adds padding to maintain the input spatial dimensions
+What is a deconvolutional (transposed convolutional) layer?|A layer that performs the reverse operation of a convolutional layer, often used in encoder-decoder architectures or image generation tasks
+What is the purpose of dilated convolutions?|To increase the receptive field without increasing the number of parameters or losing resolution
+What is the difference between a shallow and deep neural network?|Shallow networks have one or few hidden layers, while deep networks have many hidden layers, allowing them to learn more complex representations
+What is the curse of dimensionality and how does it affect neural networks?|The phenomenon where the amount of data needed to generalize accurately grows exponentially with the number of input features, making learning in high-dimensional spaces challenging
+What is the bias-variance tradeoff in machine learning?|The tradeoff between a model's ability to fit the training data (low bias) and its ability to generalize to new data (low variance)
+What is the purpose of regularization in neural networks?|To prevent overfitting by adding a penalty term to the loss function, discouraging the model from learning overly complex patterns
+What is weight decay and how does it relate to L2 regularization?|Weight decay is a regularization technique that reduces the magnitude of weights over time, equivalent to L2 regularization in gradient descent optimization
+What is the difference between online learning and batch learning?|Online learning updates the model after each training example, while batch learning updates the model after processing the entire training set
+What is mini-batch gradient descent?|A compromise between batch and stochastic gradient descent, updating the model after processing a small batch of training examples
+What is the purpose of momentum in optimization algorithms?|To accelerate convergence and reduce oscillations by adding a fraction of the previous update to the current update
+What is the exploding gradient problem?|The issue where gradients become extremely large during backpropagation, causing instability in training deep networks
+What is weight initialization, and why is it important?|The process of setting initial values for the network's weights; proper initialization can help prevent vanishing/exploding gradients and improve convergence
+What is the Xavier/Glorot initialization method?|A weight initialization technique that aims to keep the scale of gradients roughly the same in all layers
+What is the He initialization method?|A weight initialization technique designed for ReLU activation functions, helping to maintain the variance of activations across layers
+What is the difference between a parametric and non-parametric model?|Parametric models have a fixed number of parameters regardless of the data size, while non-parametric models' complexity grows with the data
+What is the purpose of the validation set in neural network training?|To evaluate the model's performance on unseen data during training, helping to detect overfitting and tune hyperparameters
+What is k-fold cross-validation?|A technique to assess model performance by partitioning the data into k subsets, training on k-1 subsets and validating on the remaining subset, repeated k times
+What is the difference between bagging and boosting in ensemble methods?|Bagging trains multiple models in parallel on random subsets of the data, while boosting trains models sequentially, focusing on misclassified examples
+What is the purpose of the activation function in the output layer of a neural network?|To map the network's raw output to the desired range or type of prediction (e.g., probabilities for classification)
+What is the difference between hard and soft attention mechanisms?|Hard attention selects specific parts of the input discretely, while soft attention assigns continuous weights to all parts of the input
+What is the purpose of skip connections in U-Net architectures?|To preserve fine-grained details by connecting encoder layers directly to corresponding decoder layers
+What is the difference between a variational autoencoder (VAE) and a standard autoencoder?|VAEs learn a probabilistic mapping to a latent space and can generate new samples, while standard autoencoders focus on reconstruction
+What is the purpose of the bottleneck layer in an autoencoder?|To force the network to learn a compressed representation of the input data, often used for dimensionality reduction or feature extraction
+What is the difference between a discriminative and generative model?|Discriminative models learn the decision boundary between classes, while generative models learn the underlying distribution of the data
+What is the purpose of the generator in a GAN?|To generate synthetic data samples that are increasingly difficult for the discriminator to distinguish from real data
+What is mode collapse in GANs and how can it be addressed?|A problem where the generator produces limited varieties of samples; can be addressed by techniques like minibatch discrimination or Wasserstein GANs
+What is the Wasserstein GAN (WGAN) and how does it improve upon the original GAN?|WGAN uses Wasserstein distance as the loss function, providing more stable training and addressing mode collapse issues
+What is the purpose of the critic in a Wasserstein GAN?|To estimate the Wasserstein distance between the real and generated data distributions, providing a more stable training signal
+What is the difference between a conditional GAN and a standard GAN?|Conditional GANs allow control over the generated output by conditioning both the generator and discriminator on additional information
+What is the purpose of the cycle-consistency loss in CycleGANs?|To ensure that the translation between domains is reversible, helping to preserve the content of the input during image-to-image translation
+What is the difference between single-shot and two-shot learning?|Single-shot learning aims to learn from one example per class, while two-shot learning uses two examples per class
+What is few-shot learning and how does it relate to meta-learning?|Few-shot learning aims to learn from very few examples; meta-learning can be used to train models that quickly adapt to new few-shot tasks
+What is the difference between transfer learning and domain adaptation?|Transfer learning uses knowledge from a related task, while domain adaptation adapts a model to a new domain with the same task but different data distribution
+What is multi-task learning and how can it benefit neural network training?|Training a model to perform multiple related tasks simultaneously, which can improve generalization and efficiency by sharing learned representations
+What is curriculum learning in the context of neural networks?|A training strategy where the model is presented with easier examples first, gradually increasing the difficulty to improve learning efficiency and performance
+What is the purpose of the Gumbel-Softmax trick in neural networks?|To allow backpropagation through samples from a categorical distribution, useful for training models with discrete latent variables
+What is the difference between a probabilistic and deterministic neural network?|Probabilistic networks model uncertainty in their predictions, while deterministic networks output fixed values
+What is the purpose of Bayesian neural networks?|To model uncertainty in the network's parameters, allowing for better uncertainty estimation in predictions
+What is the difference between epistemic and aleatoric uncertainty?|Epistemic uncertainty relates to model uncertainty, while aleatoric uncertainty relates to inherent data noise or variability
+What is the purpose of Monte Carlo dropout in neural networks?|To approximate Bayesian inference by using dropout at test time, providing uncertainty estimates for the model's predictions
+What is the difference between a feed-forward neural network and a graph neural network?|Feed-forward networks process fixed-size inputs, while graph neural networks can process data with arbitrary graph structures
+What is the purpose of message passing in graph neural networks?|To aggregate and update node representations based on their neighbors, allowing the network to learn from the graph structure
+What is the difference between node classification and graph classification tasks?|Node classification predicts labels for individual nodes, while graph classification predicts labels for entire graphs
+What is the purpose of attention mechanisms in graph neural networks?|To allow nodes to selectively aggregate information from their neighbors, improving the model's ability to capture important relationships
+What is the difference between transductive and inductive learning in graph neural networks?|Transductive learning requires the entire graph during training
